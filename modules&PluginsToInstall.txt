@@ -1,0 +1,41 @@
+install all the plugins (all the dependency are in the package.json file)
+npm install
+
+----------------------------------------------------------------------------------------
+
+install webpack:
+npm install --save-dev webpack webpack-cli
+
+----------------------------------------------------------------------------------------
+
+install html plugin
+npm install --save-dev html-webpack-plugin
+
+----------------------------------------------------------------------------------------
+
+install css loader
+npm install --save-dev style-loader css-loader
+
+----------------------------------------------------------------------------------------
+
+install to read image in the html file
+npm install --save-dev html-loader
+
+add to the module.rules array in webpack.common.js
+{
+  test: /\.html$/i,
+  loader: "html-loader",
+}
+add to the module.rules array in webpack.common.js
+{
+  test: /\.(png|svg|jpg|jpeg|gif)$/i,
+  type: "asset/resource",
+}
+
+----------------------------------------------------------------------------------------
+
+install webpack dev server
+npm install --save-dev webpack-dev-server
+
+----------------------------------------------------------------------------------------
+
